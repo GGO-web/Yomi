@@ -28,6 +28,7 @@ $(window).on("load", function() {
             const data = target.dataset.scrollto;
             event.preventDefault();
 
+            $(".burger").click();
             const elementOffset = $(data).offset().top;
             window.scroll(0, elementOffset - navHeight);
          }
@@ -162,7 +163,6 @@ $(window).on("load", function() {
             prevItem.classList.remove("more--active");
 
          const item = link.querySelector(".more");
-         console.log(item);
 
          accordionLinks.forEach((link) => {
             const currLinkList = link.nextElementSibling;
@@ -180,6 +180,7 @@ $(window).on("load", function() {
          } else {
             itemContent.classList.add("accordion__item-content--active");
             item.classList.add("more--active");
+            
             itemContent.style.maxHeight = itemContent.scrollHeight + "px";
          }
 

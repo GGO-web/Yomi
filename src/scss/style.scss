@@ -377,7 +377,7 @@
       flex: 0 0 100%;
    }
    &__content {
-      max-width: 250px;
+      max-width: 300px;
    }
    &__text {
       @include responsive-parameter(margin-top, 36, 24, 1024, 768);
@@ -639,6 +639,7 @@
       margin-bottom: 32px;
       padding-bottom: 16px;
       border: none;
+      outline: none;
       border-bottom: 2px solid $color-lightgray;
       transition: padding 0.2s ease-in-out;
       &:focus {
