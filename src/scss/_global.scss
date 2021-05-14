@@ -1,0 +1,180 @@
+body {
+   font-size: 18px;
+   line-height: 27px;
+   color: $color-black;
+   @extend %avenir-regular;
+}
+
+.body-lock {
+   overflow: hidden;
+}
+
+// containers
+
+.container-fluid {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+.container-big {
+   max-width: calc(1390px + 24px * 2);
+   margin: 0 auto;
+   padding: 0 24px;
+}
+
+.container-middle {
+   max-width: calc(1180px + 24px * 2);
+   margin: 0 auto;
+   padding: 0 24px;
+}
+
+.container-small {
+   max-width: calc(980px + 24px * 2);
+   margin: 0 auto;
+   padding: 0 24px;
+}
+// /containers
+
+
+// section-inner offsets
+.inner {
+   @include responsive-parameter(padding-top, 120, 100, 1440, 1024);
+   @include responsive-parameter(padding-top, 100, 60, 1024, 768);
+   @include responsive-parameter(padding-top, 60, 48, 576, 320);
+   @include responsive-parameter(padding-bottom, 120, 100, 1440, 1024);
+   @include responsive-parameter(padding-bottom, 100, 60, 1024, 768);
+   @include responsive-parameter(padding-bottom, 60, 48, 576, 320);
+}
+
+// logo animation
+
+.logo-part-animation {
+   animation: logo-animate 3s ease-in-out infinite;
+}
+
+@keyframes logo-animate {
+   0% {
+      fill: $color-lightgreen;
+   }
+   25% {
+      fill: #e07a5f;
+   }
+   50% {
+      fill: #3d405b;
+   }
+   75% {
+      fill: #f2cc8f;
+   }
+   100% {
+      fill: $color-lightgreen;
+   }
+}
+
+// font for all title Neue Machina Medium
+h1, h2, h3, h4, h5, h6 {
+   @extend %neuemachina-medium;
+}
+
+.title {
+   @include responsive-parameter(font-size, 52, 40, 1440, 768);
+   @include responsive-parameter(line-height, 67, 48, 1440, 768);
+   @include responsive-parameter(font-size, 40, 36, 576, 320);
+   @include responsive-parameter(line-height, 48, 40, 576, 320);
+}
+
+.btn {
+   cursor: pointer;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 176px;
+   height: 56px;
+   font-size: 20px;
+   line-height: 21px;
+   text-align: center;
+   border-radius: 39px;
+   transition: all 0.2s ease-in-out;
+   @extend %avenir-medium;
+}
+
+.btn--green {
+   background: $color-lightgreen;
+   color: $color-black;
+   &:hover, &:focus {
+      background: $color-green;
+   }
+}
+
+.btn--black {
+   background: $color-black;
+   color: $color-white;
+   &:hover, &:focus {
+      background: rgba(0, 0, 0, 0.9);
+   }
+}
+
+
+// fixed header
+.fixedToTop {
+   position: fixed;
+   z-index: 1001;
+   top: 0;
+   right: 0;
+   left: 0;
+}
+
+// ===> burger-menu <===
+@mixin normalizeOnChange($Height, $height) {
+   $currHeight: ($Height - $height) / 2;
+   .burger__line--first {
+      transform: translateY($currHeight) rotate(45deg);
+   }
+   .burger__line--second {
+      transform: scale(0.01);
+   }
+   .burger__line--third {
+      transform: translateY(-$currHeight) rotate(-45deg);
+   }
+}
+
+// burger menu when disabled 
+.burger {
+   cursor: pointer;
+   display: none;
+   transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+   .burger {
+      position: relative;
+      display: flex;
+      width: 24px;
+      height: 20px;
+   }
+   .burger__line {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: $color-white;
+      transition: transform 0.3s ease;
+   }
+   .burger__line--first {
+      top: 0;
+   }
+   .burger__line--second {
+      top: 50%;
+      transform: translateY(-50%);
+   }
+   .burger__line--third {
+      bottom: 0;
+   }
+}
+
+// burger menu when active 
+.burger--active {
+   transform: rotate(-180deg);
+   // Height of burger  and  height of line
+   @include normalizeOnChange(20px, 2px);
+}
+// ===X burger-menu X===

@@ -1,0 +1,55 @@
+// colors
+
+$color-black: #000;
+$color-white: #fff;
+$color-lightgray: #c4c4c4;
+$color-darkgray: #595F68;
+$color-lightgreen: #cee7ba;
+$color-green: #c8daba;
+$color-blue: #bbd8de;
+
+// fonts 
+
+%avenir-regular {
+   font-family: "AvenirNextCyr-Regular", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+%avenir-medium {
+   font-family: "AvenirNextCyr-Medium", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+
+%avenir-bold {
+   font-family: "AvenirNextCyr-Bold", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
+%neuemachina-medium {
+   font-family: "NeueMachina-Medium", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+
+// responsive parameter
+
+@mixin responsive-parameter($parameter, $pcSize, $mobSize, $maxSize, $minSize) {
+   $addSize: $pcSize - $mobSize;
+   $maxWidth: $maxSize - $minSize;
+   // змінюємо параметр в інтервалі від $minSize до $maxSize
+
+   // залишаєм десктопний параметер на ширині більше $maxSize
+   @media (min-width: #{$maxSize + px}){
+      #{$parameter}: #{$pcSize + px};
+   }
+   @media (max-width: #{$maxSize + px}) and (min-width: #{$minSize + px}){
+      #{$parameter}: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$minSize + px}) / #{$maxWidth}));
+   }
+   // залишаєм мобільний параметер на ширині менше $minSize
+   @media (max-width: #{$minSize + px}){
+      #{$parameter}: #{$mobSize + px};
+   }
+}
