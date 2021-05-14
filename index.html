@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Yomi: я зроблю найкращий манікюр у твоєму житті!">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+   <link rel="icon shortcut" href="img/favicon/favicon.ico">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#000000">
+   <meta name="theme-color" content="#ffffff">
+   <title>Yomi</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+   <script defer src="js/script.min.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+      <!-- Header -->
+      <header class="header fixedToTop">
+         <div class="container-big">
+            <div class="header__inner">
+               <a aria-label="Логотип: ваш кольоровий нігтик" class="header__logo logo logo__link" href="index.html">
+                  <!-- <img class="logo__image" src="img/icons/logo.svg" alt=""> -->
+                  <img aria-hidden="true" class="logo__image" src="img/icons/logo.svg" alt="Логотип">
+               </a>
+               <button aria-expanded="true" aria-label="Главное меню" class="burger">
+                  <span class="burger__line burger__line--first"></span>
+                  <span class="burger__line burger__line--second"></span>
+                  <span class="burger__line burger__line--third"></span>
+               </button>
+               <nav class="menu">
+                  <ul class="menu__list">
+                     <li class="menu__list-item">
+                        <a href="#" class="menu__link" data-scrollto="#about">3 факти про мене</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="#" class="menu__link" data-scrollto="#safely">Безпечний манікюр</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="#" class="menu__link" data-scrollto="#goal">Ціль на 2020</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="#" class="menu__link" data-scrollto="#typical">Поширені питання</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="#" class="menu__link" data-scrollto="#follow">Роботи</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="#" class="menu__link" data-scrollto="#contacts">Контакти</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <!-- Header END! -->
+
+      <!-- Section-Promo -->
+      <section class="promo">
+         <div class="container-middle">
+            <div class="promo__inner">
+               <div class="promo__content">
+                  <h1 class="promo__title">
+                     Привіт! <br> Я&nbsp;Oksana Yomi
+                     <p class="promo__text">Роблю ідеальні чистки <br>
+                        та покриття гель-лаком.</p>
+                  </h1>
+                  <button aria-label="Записатись на манікюр" class="promo__btn btn btn--green" data-scrollto="#contacts">Записатись</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section-Promo END! -->
+
+      <!-- Section-About -->
+      <section class="about" id="about">
+         <div class="container-middle">
+            <div class="about__inner">
+               <h2 class="about__title title">3 факти про мене</h2>
+               <ol class="about__row">
+                  <li class="about__column">
+                     <div class="about__column-index">
+                        <img aria-hidden="true" class="about__column-image" src="img/icons/star.svg" alt="">
+                     </div>
+                     <p class="about__column-text">Працювала 12 років в cфері продажу брендового одягу.</p>
+                  </li>
+                  <li class="about__column">
+                     <div class="about__column-index">
+                        <img aria-hidden="true" class="about__column-image" src="img/icons/shoe.svg" alt="">
+                     </div>
+                     <p class="about__column-text">Продавала бренди: Kenzo, Elisabetta Franchi, Ermanno Scervino, John Richmond.</p>
+                  </li>
+                  <li class="about__column">
+                     <div class="about__column-index">
+                        <img aria-hidden="true" class="about__column-image" src="img/icons/dancer.svg" alt="">
+                     </div>
+                     <p class="about__column-text">Досвід стиліста допомогає підібрати клієнтам манікюр для будь-якого луку.</p>
+                  </li>
+               </ol>
+            </div>
+         </div>
+      </section>
+      <!-- Section-About END! -->
+
+      <!-- Section-Safely -->
+      <section class="safely" id="safely">
+         <div class="container-fluid">
+            <div class="safely__inner">
+               <div class="safely__content-outer">
+                  <div class="container-small">
+                     <div class="safely__content">
+                        <h2 class="safely__title title">Безпечний манікюр</h2>
+                        <p class="safely__text">Я використовую спеціальні розчини та сухожар. Стерилізація інструментів відповідає Державним cанітарним нормам та
+                        проходить 4 етапи.</p>
+                        <button aria-label="Записатись на манікюр" class="safely__button btn btn--black" data-scrollto="#contacts">Хочу!</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="safely__image-box">
+                  <img class="safely__image" src="img/suhozhar.png" alt="">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section-Safely END! -->
+
+      <!-- Section-Ideal -->
+      <section class="ideal">
+         <div class="container-small">
+            <div class="ideal__inner inner">
+               <h2 class="ideal__title title">Псссс. Хочеш <br> ідеальний манікюр?</h2>
+               <div class="ideal__info">
+                  <button aria-label="Записатись на манікюр" class="ideal__btn btn btn--green" data-scrollto="#contacts">Записатись</button>
+                  <!-- before insert phone icon -->
+                  <div class="ideal__phone-box">
+                     <a href="tel:380681234567" class="ideal__phone">+ 38 068 123 45 67</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section-Ideal END! -->
+
+      <!-- Section-Goal -->
+      <section class="goal" id="goal">
+         <div class="container-fluid">
+            <div class="goal__inner">
+               <div class="goal__content-outer">
+                  <div class="container-small">
+                     <div class="goal__content">
+                        <h2 class="goal__title title">Моя ціль <br> цього року</h2>
+                        <p class="goal__text">500 щасливих жінок,
+                           які кайфують від самого вигляду своїх рук.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="goal__image-box">
+                  <img class="goal__image" src="img/hand.png" alt="">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section-Goal END! -->
+
+      <!-- Section-Typical -->
+      <section class="typical" id="typical">
+         <div class="container-small">
+            <div class="typical__inner">
+               <h2 class="typical__title title">Поширені <br> питання</h2>
+               <div class="accordion">
+                  <ul class="accordion__list">
+                     <li class="accordion__item">
+                        <div class="accordion__item-box">
+                           <span class="accordion__item-title">Мене болить пластина після гель-лаку. З чим це може бути пов’язано?</span>
+                           <button class="accordion__more more">
+                              <span class="more__line"></span>
+                              <span class="more__line"></span>
+                           </button>
+                        </div>
+                        <p class="accordion__item-content">
+                           Є одне базове правило: олія для кутикули щодня. В нігтьовому ложі відбувається синтез нігтьової пластини, звідти нігтики
+                           ростуть і необхідно, щоб поживні речовини потрапляли cаме сюди. <br> І&nbsp;,звичайно, важливі не тільки зовнішні засоби, а й
+                           підтримання стану організму в цілому.
+                        </p>
+                     </li>
+                     <li class="accordion__item">
+                        <div class="accordion__item-box">
+                           <span class="accordion__item-title">Що робити, щоб нігті були міцні і не ламалися?</span>
+                           <button class="accordion__more more more--active">
+                              <span class="more__line"></span>
+                              <span class="more__line"></span>
+                           </button>
+                        </div>
+                        <p class="accordion__item-content accordion__item-content--active">
+                           Є одне базове правило: олія для кутикули щодня. В нігтьовому ложі відбувається синтез нігтьової пластини, звідти нігтики
+                           ростуть і необхідно, щоб поживні речовини потрапляли cаме сюди. <br> І&nbsp;,звичайно, важливі не тільки зовнішні засоби, а й
+                           підтримання стану організму в цілому.
+                        </p>
+                     </li>
+                     <li class="accordion__item">
+                        <div class="accordion__item-box">
+                           <span class="accordion__item-title">Чи можна робити гель-лак безперервно?</span>
+                           <button class="accordion__more more">
+                              <span class="more__line"></span>
+                              <span class="more__line"></span>
+                           </button>
+                        </div>
+                        <p class="accordion__item-content">
+                           Є одне базове правило: олія для кутикули щодня. В нігтьовому ложі відбувається синтез нігтьової пластини, звідти нігтики
+                           ростуть і необхідно, щоб поживні речовини потрапляли cаме сюди. <br> І&nbsp;,звичайно, важливі не тільки зовнішні засоби, а й
+                           підтримання стану організму в цілому.
+                        </p>
+                     </li>
+                     <li class="accordion__item">
+                        <div class="accordion__item-box">
+                           <span class="accordion__item-title">Чи може бути алергія на гель-лак?</span>
+                           <button class="accordion__more more">
+                              <span class="more__line"></span>
+                              <span class="more__line"></span>
+                           </button>
+                        </div>
+                        <p class="accordion__item-content">
+                           Є одне базове правило: олія для кутикули щодня. В нігтьовому ложі відбувається синтез нігтьової пластини, звідти нігтики
+                           ростуть і необхідно, щоб поживні речовини потрапляли cаме сюди. <br> І&nbsp;,звичайно, важливі не тільки зовнішні засоби, а й
+                           підтримання стану організму в цілому.
+                        </p>
+                     </li>
+                     <li class="accordion__item">
+                        <div class="accordion__item-box">
+                           <span class="accordion__item-title">Які кольори краще підбирати на короткі нігті?</span>
+                           <button class="accordion__more more">
+                              <span class="more__line"></span>
+                              <span class="more__line"></span>
+                           </button>
+                        </div>
+                        <p class="accordion__item-content">
+                           Є одне базове правило: олія для кутикули щодня. В нігтьовому ложі відбувається синтез нігтьової пластини, звідти нігтики
+                           ростуть і необхідно, щоб поживні речовини потрапляли cаме сюди. <br> І&nbsp;,звичайно, важливі не тільки зовнішні засоби, а й
+                           підтримання стану організму в цілому.
+                        </p>
+                     </li>
+                     <li class="accordion__item">
+                        <div class="accordion__item-box">
+                           <span class="accordion__item-title">Скільки носити гель-лак?</span>
+                           <button class="accordion__more more">
+                              <span class="more__line"></span>
+                              <span class="more__line"></span>
+                           </button>
+                        </div>
+                        <p class="accordion__item-content">
+                           Є одне базове правило: олія для кутикули щодня. В нігтьовому ложі відбувається синтез нігтьової пластини, звідти нігтики
+                           ростуть і необхідно, щоб поживні речовини потрапляли cаме сюди. <br> І&nbsp;,звичайно, важливі не тільки зовнішні засоби, а й
+                           підтримання стану організму в цілому.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section-Typical END! -->
+
+      <!-- Section-Beauty -->
+      <section class="beauty" id="beauty">
+         <div class="container-small">
+            <div class="beauty__inner inner">
+               <!-- just title style, but that animated text -->
+               <p class="beauty__title title"> 
+                  Не здирай гель&#8209;лак, <br> <span class="beauty__typetext"></span>
+               </p>
+            </div>
+         </div>
+      </section>
+      <!-- Section-Beauty END! -->
+
+      <!-- Section-Follow -->
+      <section class="follow" id="follow">
+         <div class="container-fluid">
+            <div class="follow__inner">
+               <div class="follow__content-outer">
+                  <div class="container-small">
+                     <div class="follow__content">
+                        <h2 class="follow__title title">Стеж за <a href="https://www.instagram.com/nails_yomi/" target="_blank">@oksana.yomi</a> <br> в інстаграм</h2>
+                        <p class="follow__text">Там побачиш більше моїх роботи, <br>
+                        і більше дізнаєшся про все-все-все.</p>
+                        <a href="https://www.instagram.com/nails_yomi/" class="follow__btn btn btn--black" target="_blank">Тицяй Сюди</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="follow__slider-container swiper-container">
+                  <div class="follow__slider-wrapper swiper-wrapper">
+                     <div class="follow__slider-item swiper-slide"><img src="img/manicure-gallery/manicure-1.jpg" alt=""></div>
+                     <div class="follow__slider-item swiper-slide"><img src="img/manicure-gallery/manicure-2.jpg" alt=""></div>
+                     <div class="follow__slider-item swiper-slide"><img src="img/manicure-gallery/manicure-3.jpg" alt=""></div>
+                     <div class="follow__slider-item swiper-slide"><img src="img/manicure-gallery/manicure-4.jpg" alt=""></div>
+                     <div class="follow__slider-item swiper-slide"><img src="img/manicure-gallery/manicure-1.jpg" alt=""></div>
+                     <div class="follow__slider-item swiper-slide"><img src="img/manicure-gallery/manicure-2.jpg" alt=""></div>
+                     <div class="follow__slider-item swiper-slide"><img src="img/manicure-gallery/manicure-3.jpg" alt=""></div>
+                     <div class="follow__slider-item swiper-slide"><img src="img/manicure-gallery/manicure-4.jpg" alt=""></div>
+                  </div>
+                  <div class="follow__slider-arrow follow__arrow-left"><img src="img/icons/arrow-left.svg" alt=""></div>
+                  <div class="follow__slider-arrow follow__arrow-right"><img src="img/icons/arrow-right.svg" alt=""></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section-Follow END! -->
+
+      <!-- Section-Contacts -->
+      <section class="contacts" id="contacts">
+         <div class="container-small">
+            <div class="contacts__inner inner">
+               <div class="contacts__content">
+                  <h2 class="contacts__title title">Записатись <br> на манікюр</h2>
+                  <form class="contacts__form" id="form-main" autocomplete="off" action="" method="POST">
+                     <span class="contacts__form-title">
+                        Заповни форму і я тобі обов’язково зателефоную.
+                     </span>
+
+                     <label class="contacts__form-label" for="contacts__form-name">Твоє Ім'я</label>
+                     <input class="contacts__form-input" name="user" type="text" id="contacts__form-name">
+
+                     <label class="contacts__form-label" for="contacts__form-tel">Номер телефону</label>
+                     <input class="contacts__form-input" name="phone" type="tel" id="contacts__form-tel">
+
+                     <div class="contacts__form-privacy-box">
+                        <input class="contacts__form-checkbox" id="contacts__form-checkbox" type="checkbox">
+                        <label class="contacts__form-privacy" for="contacts__form-checkbox">
+                           Я прочитала і приймаю <a class="contacts__form-rule" href="#privacy-policy">Privacy Policy, Terms and Conditions</a> і даю згоду на обробку персональних даних, які необхідні для запису.
+                        </label>
+                     </div>
+                     <button class="contacts__form-btn btn btn--green" type="submit">Записатись</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section-Contacts END! -->
+
+      <!-- FOOTER -->
+      <footer class="footer">
+         <div class="footer__inner">
+            <a aria-label="Логотип: ваш кольоровий нігтик" class="logo logo__link" href="#">
+               <img aria-hidden="true" class="logo__image" src="img/icons/logo-black.svg" alt="Логотип">
+            </a>
+            <a aria-label="Мої роботи і задоволені клієнти" href="https://www.instagram.com/nails_yomi/" class="footer__menu-social" target="_blank">
+               <img src="img/icons/instagram.svg" alt="">
+            </a>
+            <nav class="footer__menu">
+               <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                     <a href="tel:0681234567" class="footer__menu-tel">+ 38 068 123 45 67</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a href="https://goo.gl/maps/zfnhKKk4SnemoznUA" class="footer__menu-location" target="_blank">
+                        <span>Парус Development</span> <br> вул. Липинського, 28 <br> місто Львів
+                     </a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a href="#privacy-policy" class="footer__menu-privacy">Privacy Policy</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </footer>
+      <!-- FOOTER END!-->
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+</body>
+</html>
